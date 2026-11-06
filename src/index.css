@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-charcoal: #15191E;
+    --color-charcoal-light: #1F242B;
+    --color-charcoal-card: #1A1F26;
+    --color-ivory: #F7F5F0;
+    --color-ivory-muted: #D8D4CA;
+    --color-gold: #D1AA75;
+    --color-gold-hover: #E2BD8A;
+    --color-gold-dark: #A98553;
+    --color-border-subtle: rgba(209, 170, 117, 0.15);
+  }
+
+  body {
+    background-color: #15191E;
+    color: #F7F5F0;
+    font-family: 'Plus Jakarta Sans', 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif-brand {
+    font-family: 'Cinzel', 'Noto Serif KR', serif;
+  }
+}
+
+/* Custom editorial styling */
+.font-editorial {
+  font-family: 'Noto Serif KR', serif;
+}
+
+.font-display {
+  font-family: 'Cinzel', serif;
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #F3DEB8 0%, #D1AA75 50%, #9C7844 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.border-gold-subtle {
+  border-color: rgba(209, 170, 117, 0.2);
+}
+
+.bg-charcoal-card {
+  background-color: #1A1F26;
+}
+
+.bg-charcoal-light {
+  background-color: #212730;
+}
+
+/* Custom clean scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #15191E;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2D343E;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D1AA75;
+}
